@@ -1,3 +1,7 @@
+variable "ApiKey" {}
+variable "SecretKey" {}
+
+
 variable "org1_name" {
   type    = string
   default = "Compute"
