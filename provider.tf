@@ -1,5 +1,5 @@
 /*
-Sample file.tf to connect to Intersight with API Key 
+Sample file.tf to connect to Intersight with API Key var
 and request the Intersight Terraform Provider
 */
  
@@ -15,5 +15,7 @@ terraform {
 provider "intersight" {
 #  apikey    = "59ce895f16267c000103c296/60706e367564612d30808a36/672bb1df756461300102e52f"
 #  secretkey = ".secrets/intersight_secret_key"
+   apikey    = var.ApiKey
+   secretkey = var.SecretKey
   endpoint = "https://intersight.com"
 }
