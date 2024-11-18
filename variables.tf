@@ -1,5 +1,10 @@
-variable "ApiKey" {}
-variable "SecretKey" {}
+variable "ApiKey" {
+  type    = string
+}
+
+variable "SecretKey" {
+  type    = string
+}
 
 
 variable "org1_name" {
