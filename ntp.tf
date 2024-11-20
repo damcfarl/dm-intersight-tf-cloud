@@ -11,6 +11,7 @@ resource "intersight_ntp_policy" "myntp" {
   ntp_servers = [
     "ntp.esl.cisco.com",
     "time-a-g.nist.gov",
+    "time-b-g.nist.gov"
 #   "time-b-g.nist.gov"
   ]
   organization {
