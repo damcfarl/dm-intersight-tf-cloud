@@ -1,9 +1,8 @@
-variable "ApiKey_local" {
+variable "ApiKey" {
   type    = string
-# }
 }
 
-variable "SecretKey_local" {
+variable "SecretKey" {
   type    = string
 }
 
