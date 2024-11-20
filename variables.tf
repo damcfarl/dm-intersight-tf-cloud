@@ -1,15 +1,20 @@
-variable "ApiKey" {
+variable "ApiKey_local" {
+  type    = string
+# }
+}
+
+variable "SecretKey_local" {
   type    = string
 }
 
-variable "SecretKey" {
+variable "resource_group" {
   type    = string
+  default = "damcfarl-RG"
 }
-
 
 variable "org1_name" {
   type    = string
-  default = "Compute"
+  default = "damcfarl-ORG"
 }
 
 variable "server_profile" {
@@ -27,9 +32,3 @@ variable "account" {
   default = "Dave Mcfarland"
 # default = "damcfarl@cisco.com"
 }
-
-variable "resource_group" {
-  type    = string
-  default = "Compute-RG"
-}
-

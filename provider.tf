@@ -13,10 +13,10 @@ terraform {
 }
 
 provider "intersight" {
-#  apikey    = "59ce895f16267c000103c296/60706e367564612d30808a36/672bb1df756461300102e52f"
-#  secretkey = ".secrets/intersight_secret_key"
-#  secretkey = "intersight_secret_key"
-   apikey    = var.ApiKey
+  apikey    =  var.ApiKey
    secretkey = var.SecretKey
+##  apikey    = "../secrets/api_key"
+##  apikey    = "59ce895f16267c000103c296/60706e367564612d30808a36/672bb1df756461300102e52f"
+##  secretkey = "../secrets/intersight_secret_key"
    endpoint  = "https://intersight.com" 
 }
