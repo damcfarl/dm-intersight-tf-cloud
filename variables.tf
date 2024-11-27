@@ -1,8 +1,10 @@
 variable "ApiKey" {
+  default = "../secrets/api_key"
   type    = string
 }
 
 variable "SecretKey" {
+  default = "../secrets/intersight_secret_key"
   type    = string
 }
 
